@@ -68,3 +68,16 @@ button:focus-visible {
 } */
 
 @import "tailwindcss";
+
+/* Tailwind classes via @apply or regular CSS */
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1447e6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #162456 !important;
+  opacity: 100%;
+}
