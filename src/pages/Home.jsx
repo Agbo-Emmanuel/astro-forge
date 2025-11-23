@@ -4,6 +4,7 @@ import ServiceSection from "../components/ServiceSection";
 import WhyAstroForge from "../components/WhyAstroForge";
 import CaseStudy from "../components/CaseStudy";
 import Testimony from "../components/Testimony";
+import NewsLetterSign from "../components/NewsLetterSign";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <WhyAstroForge />
       <CaseStudy />
       <Testimony />
+      <NewsLetterSign />
     </main>
   );
 };
