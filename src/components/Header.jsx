@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +31,17 @@ const Header = () => {
     <>
       <header
         className={`fixed top-0 z-40 w-full px-6 md:px-20 py-6 flex justify-between items-center transition-all duration-300 
-          ${isScrolled ? "backdrop-blur-md bg-white/10 border-b border-white/10" : "bg-transparent"}
+          ${
+            isScrolled
+              ? "backdrop-blur-md bg-blue-950/60 border-b border-white/10"
+              : "bg-transparent"
+          }
         `}
       >
         {/* LOGO */}
-        <div className="w-[150px] h-[60px] bg-green-500 rounded-md"></div>
+        <div className="w-[250px] h-[60px] rounded-md ml-[-60px]">
+          <img src={logo} alt="logo" className="w-full h-full object-cover" />
+        </div>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-10">

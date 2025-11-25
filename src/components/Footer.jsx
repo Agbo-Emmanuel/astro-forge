@@ -1,6 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { FaWhatsapp, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -10,8 +11,14 @@ const Footer = () => {
           {/* Brand */}
           <article>
             <div className="flex items-center gap-3">
-              <div className="w-[50px] h-[50px] bg-red-500 rounded-md"></div>
-              <h1 className="text-3xl font-semibold">Astroforge</h1>
+              <div className="w-[200px] h-[50px] rounded-md ml-[-60px]">
+                <img
+                  src={logo}
+                  alt="logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-3xl font-semibold ml-[-60px]">Astroforge</h1>
             </div>
             <p className="text-gray-300 text-lg mt-3 leading-relaxed">
               Forging the Future of Digital Work.
