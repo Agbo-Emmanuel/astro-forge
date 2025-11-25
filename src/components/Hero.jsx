@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import woman_working_laptop from "../assets/woman_working_laptop.jpg";
 
 const Hero = () => {
   return (
@@ -83,8 +84,14 @@ const Hero = () => {
           animate={{ scale: 1, rotate: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
           className="w-72 h-72 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] 
-              rounded-full bg-red-500 shadow-2xl"
-        />
+              rounded-full shadow-2xl"
+        >
+          <img
+            src={woman_working_laptop}
+            alt="hero_image"
+            className="w-full h-full object-cover rounded-full"
+          />
+        </motion.div>
       </motion.article>
     </main>
   );
