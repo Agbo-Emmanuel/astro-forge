@@ -5,16 +5,28 @@ import guy_coding from "../assets/guy_coding.jpg";
 import mobile_app_dev from "../assets/mobile_app_dev.png";
 import social_media_strategy from "../assets/social_media_strategy.png";
 import remote_talent from "../assets/remote_talent.png";
+import services_hero from "../assets/services_hero.png";
 
 const Services = () => {
   return (
     <>
       <main className="w-full bg-gray-50">
-        <section className="w-full pt-40 pb-20 flex flex-col items-center justify-center bg-blue-950 text-white">
+        <section 
+          className="w-full pt-40 pb-28 flex flex-col items-center justify-center relative bg-blue-950 text-white overflow-hidden"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.9)), url(${services_hero})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Subtle Decorative Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.05)_0%,transparent_70%)] pointer-events-none" />
+          
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-4xl md:text-7xl font-bold mb-6 text-center z-10"
           >
             Services
           </motion.h2>
@@ -22,9 +34,9 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl opacity-90 text-center max-w-2xl px-6"
+            className="text-xl md:text-2xl opacity-90 text-center max-w-3xl px-6 leading-relaxed z-10 text-gray-200"
           >
-           Comprehensive digital solutions designed to help your business thrive
+           Comprehensive digital solutions design to help your business thrive and dominate the digital landscape.
           </motion.p>
         </section>
 
